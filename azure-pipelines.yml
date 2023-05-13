@@ -27,4 +27,4 @@ steps:
     checkStyleRunAnalysis: true
     pmdRunAnalysis: true
     findBugsRunAnalysis: true
-    goals: 'clean build'
+    goals: 'clean package'
