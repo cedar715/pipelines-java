@@ -11,6 +11,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: DownloadSecureFile@1
+  displayName: 'Download secure file'
+  inputs:
+    secureFile: license.txt
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
